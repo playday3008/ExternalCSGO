@@ -104,7 +104,6 @@ namespace SimpleExternalCheatCSGO.Offsets
             Console.WriteLine("- dw_AcceptMatch         => 0x" + dw_AcceptMatch.ToString("X"));
             dw_AcceptMatch += (int)Globals._csgo.CSGOModules["client"].BaseAddress;
 
-            dw_MatchAccepted = PatternScanner.FindPattern(Globals._csgo.ProcessHandle, "89 B7 ? ? ? ? 8B 4F 04 85 C9", Globals._csgo.CSGOModules["client"], false, 0x2, true);
 
             Console.WriteLine("- dw_MatchAccepted       => 0x" + dw_MatchAccepted.ToString("X"));
 
